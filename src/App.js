@@ -7,10 +7,16 @@ import CryptoList from "./components/CryptoList"
 
 function App() {
   return (
-    <div className="App">
-      <h1>Crypto Dashboard</h1>
-      <Navbar/>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        {/* Dashboard route (main page) */}
+        <Route path="/" element={<Dashboard />} />
+        
+        {/* Crypto details route (dynamic route for each crypto) */}
+        <Route path="/crypto/:id" element={<CryptoDetails />} />
+      </Routes>
+    </Router>
   );
 }
 

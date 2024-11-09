@@ -1,5 +1,5 @@
 function CryptoDetails(){
-    return <nav>Crypto Details Bar</nav>
+    return <div>Crypto Details Page</div>
 }
 
 export default CryptoDetails;

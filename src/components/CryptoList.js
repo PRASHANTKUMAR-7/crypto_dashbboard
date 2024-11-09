@@ -1,5 +1,8 @@
 function CryptoList(){
-    return <nav>Crypto List</nav>
+    return  <ul>
+    {/* Each cryptocurrency's details will be displayed here */}
+    <li>Sample Crypto: $1000</li>
+  </ul>
 }
 
 export default CryptoList;
